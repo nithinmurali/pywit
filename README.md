@@ -33,6 +33,6 @@ if __name__ == '__main__':
 	access_token = 'MY_ACCESS_TOKEN'
 
   # GET /message to extract intent and entities from user request
-	response = wit.message('turn on the lights in the kitchen', access_token)
+	response = wit.message(access_token, 'turn on the lights in the kitchen')
 	print('/message -> {}'.format(response))
 ```
